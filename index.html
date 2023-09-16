@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        div {
+            text-align: center;
+        }
+         table {
+            width: 100%;
+            border-collapse: collapse;  
+        }
+        th, td {
+            border: 1px solid #545454;
+            padding: 8px; 
+            text-align: center;
+        }
+
+        th.header {
+            background-color: #7c7c7c;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Cadastro e Listagem de Pontos</h1>
+        <hr>
+
+    <form>
+        <label for="Motivo">Motivo: </label>
+        <input type="text" name="motivo" id="motivo">
+
+        <label for="data">Data: </label>
+        <input type="date" name="data" id="data">
+
+        <label for="tipe">Tipo: </label>
+            <select name="tipe" id="tipe">
+                <option value="Entrada">Entrada</option>
+                <option value="Saída">Saída</option>
+             </select>
+        <input type="submit" value="Registrar Ponto">
+    </form>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <p><b>Nome:</b> José da Silva &nbsp;<b>Cargo:</b> Portaria</p> 
+            <div><small>Registros de Ponto.</small></div>
+
+             <table>
+        <tr>
+            <th class="header">DATA</th>
+            <th class="header">ENTRADA</th>
+            <th class="header">SAÍDA</th>
+        </tr>
+        <tr>
+            <td rowspan="2">01/08/2023</td> 
+            <td>09:00</td>
+            <td>18:00</td>
+        </tr>
+        <tr>
+            <td>19:00</td>
+            <td>21:00</td>
+        </tr>
+        <tr>
+            <td>02/08/2023</td>
+            <td colspan="2">FOLGA</td>
+        </tr>
+        <tr>
+            <td rowspan="2">03/08/2023</td>
+            <td>08:30</td>
+            <td>17:45</td>
+        </tr>
+        <tr>
+            <td>18:30</td>
+            <td>22:00</td>
+        </tr>
+        <tr>
+            <td>04/08/2023</td>
+            <td colspan="2">FOLGA</td>
+        </tr>
+        <tr>
+            <td rowspan="2">05/08/2023</td>
+            <td>10:15</td>
+            <td>18:30</td>
+        </tr>
+        <tr>
+            <td>19:15</td>
+            <td>21:45</td>
+        </tr>
+        <tr>
+            <td>06/08/2023</td>
+            <td colspan="2">FOLGA</td>
+        </tr>
+        <tr>
+            <td rowspan="2">07/08/2023</td>
+            <td>09:20</td>
+            <td>17:30</td>
+        </tr>
+        <tr>
+            <td>18:15</td>
+            <td>21:00</td>
+        </tr>
+    </table>    
+        </section>
+        <footer>
+            <hr>
+            <div>Sistema de gestão de ponto&reg;</div>
+        </footer>
+        
+    </main>
+
+    
+</body>
+</html>
